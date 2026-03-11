@@ -14,13 +14,11 @@
       padding: 20px;
       text-align: center;
     }
-    .hero {
+    img.logo {
       width: 100%;
-      max-height: 300px;          /* <-- shrunk it down, chill now */
+      max-width: 800px; /* caps it so it doesn't nuke mobile, change if you want */
       height: auto;
-      object-fit: cover;
-      border-bottom: 8px solid #ffeb3b;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     h1 {
       font-size: 3.5rem;
@@ -35,17 +33,62 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-    /* rest of your styles stay the same, no need to copy-paste the whole thing again */
+    .comic-card {
+      background: #222;
+      border: 5px solid #ffeb3b;
+      border-radius: 15px;
+      padding: 15px;
+      width: 320px;
+      box-shadow: 0 0 20px rgba(255,235,59,0.5);
+      transition: transform 0.2s;
+    }
+    .comic-card:hover {
+      transform: scale(1.08);
+    }
+    .comic-card img {
+      width: 100%;
+      border-radius: 10px;
+      border: 3px solid white;
+    }
+    .comic-title {
+      font-size: 1.5rem;
+      margin: 15px 0 10px;
+      color: #ffeb3b;
+    }
+    .read-btn {
+      display: inline-block;
+      background: #ff4444;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .read-btn:hover {
+      background: #ff6666;
+    }
   </style>
 </head>
 <body>
 
-  <img src="notebook comix inc..png" alt="notebook comix banner" class="hero">
+  <img src="notebook comix inc..png" alt="notebook comix inc." class="logo">
 
   <h1>notebook comix inc.</h1>
 
   <div class="comic-grid">
-    <!-- your cards here, unchanged -->
+    <div class="comic-card">
+      <img src="ascension.png" alt="the ascension">
+      <div class="comic-title">the ascension (not a comic but a cool book written by gibby)</div>
+      <a href="https://www.amazon.com/Ascension-gibson-gibby-major/dp/B0FWTWXK8V/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.Z7CfDLelSrjOAwt93VkLew.EOdSqn2BmGCLRCHV7wwCYqJMwCMtsmodW2FyNwMtDI4&qid=1760796262&sr=1-1" 
+         class="read-btn">buy it now</a>
+    </div>
+
+    <div class="comic-card">
+      <img src="coming soon.png" alt="coming soon">
+      <div class="comic-title">coming soon!</div>
+      <a href="#" class="read-btn">coming soon!</a>
+    </div>
   </div>
 
 </body>
