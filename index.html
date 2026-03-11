@@ -14,10 +14,17 @@
       padding: 20px;
       text-align: center;
     }
+    .hero {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-bottom: 8px solid #ffeb3b;
+      margin-bottom: 30px;
+    }
     h1 {
-      font-size: 3rem;
-      text-shadow: 4px 4px #ff4444;
-      margin-bottom: 40px;
+      font-size: 3.5rem;
+      text-shadow: 6px 6px #ff4444;
+      margin: 0 0 40px;
     }
     .comic-grid {
       display: flex;
@@ -65,12 +72,15 @@
   </style>
 </head>
 <body>
-  <h1>notebook inc.</h1> <!-- added this cause you had no title lol -->
+
+  <img src="notebook comix inc..png" alt="notebook comix banner" class="hero">
+
+  <h1>notebook comix inc.</h1>
 
   <div class="comic-grid">
     <div class="comic-card">
       <img src="ascension.png" alt="the ascension">
-      <div class="comic-title">the ascension (not a comic but a cool book written by gibby)</div>
+      <div class="comic-title">the ascension (made by the ceo of notebook inc)</div>
       <a href="https://www.amazon.com/Ascension-gibson-gibby-major/dp/B0FWTWXK8V/ref=tmm_hrd_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.Z7CfDLelSrjOAwt93VkLew.EOdSqn2BmGCLRCHV7wwCYqJMwCMtsmodW2FyNwMtDI4&qid=1760796262&sr=1-1" 
          class="read-btn">buy it now</a>
     </div>
@@ -81,5 +91,6 @@
       <a href="#" class="read-btn">coming soon!</a>
     </div>
   </div>
+
 </body>
 </html>
